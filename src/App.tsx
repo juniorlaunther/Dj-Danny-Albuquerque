@@ -122,14 +122,14 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#050505]"></div>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl">
-          <h2 className="hero-title text-sm md:text-base font-bold uppercase tracking-[0.3em] text-brand-primary mb-4">
+        <div className="relative z-10 text-center px-4 w-full max-w-5xl mx-auto">
+          <h2 className="hero-title text-[10px] sm:text-xs md:text-base font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-brand-primary mb-4 break-words">
             A Força Feminina na Música Urbana
           </h2>
-          <h1 className="hero-title text-5xl md:text-8xl font-display font-extrabold tracking-tighter leading-[0.9] mb-8">
-            DANNY <br /> ALBUQUERQUE
+          <h1 className="hero-title text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-display font-extrabold tracking-tighter leading-[0.9] mb-8 break-words">
+            DANNY <br className="hidden sm:block" /> ALBUQUERQUE
           </h1>
-          <p className="hero-title text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+          <p className="hero-title text-base md:text-xl text-white/70 max-w-2xl mx-auto mb-10 font-light leading-relaxed px-4">
             DJ, Produtora, Cantora e Compositora. Transformando palcos com energia autêntica e produções que dominam o funk brasileiro.
           </p>
           <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -202,8 +202,11 @@ export default function App() {
               width="100%" 
               height="100%"
               controls
-              light="https://yt3.googleusercontent.com/BgIzmjp5FFlOUO0h9USBqvMlrkYHSS9o8fIXv8NccraDmzLVvneDCeHveO8k46pAg6jcd5K3=s900-c-k-c0x00ffffff-no-rj"
-              playIcon={<div className="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center text-black scale-125 hover:scale-150 transition-transform"><Play fill="currentColor" /></div>}
+              config={{
+                youtube: {
+                  playerVars: { showinfo: 1 }
+                }
+              }}
             />
           </div>
         </div>
@@ -220,8 +223,8 @@ export default function App() {
           <div className="bento-grid">
             {/* Card 1 */}
             <div className="col-span-1 md:col-span-2 glass p-8 rounded-3xl flex flex-col justify-end relative overflow-hidden group">
-              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Mic2 className="w-32 h-32" />
+              <div className="w-16 h-16 bg-brand-primary/20 rounded-2xl flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
+                <Mic2 className="w-8 h-8" />
               </div>
               <h4 className="text-2xl font-display font-bold mb-4">Artista Completa</h4>
               <p className="text-white/60 leading-relaxed">
@@ -248,7 +251,10 @@ export default function App() {
             </div>
 
             {/* Card 4 */}
-            <div className="col-span-1 glass p-8 rounded-3xl flex flex-col justify-center group">
+            <div className="col-span-1 glass p-8 rounded-3xl flex flex-col justify-center items-center text-center group">
+               <div className="w-16 h-16 bg-brand-primary/20 rounded-2xl flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
+                <Users className="w-8 h-8" />
+              </div>
                <h4 className="text-4xl font-display font-bold text-brand-primary mb-2">+1.8M</h4>
                <p className="text-sm uppercase tracking-widest font-bold">Fãs Engajados</p>
             </div>
