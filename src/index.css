@@ -3,8 +3,8 @@
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Syne", sans-serif;
-  --color-brand-primary: #D8B4FE;
-  --color-brand-secondary: #F472B6;
+  --color-brand-primary: #F472B6;
+  --color-brand-secondary: #FB7185;
 }
 
 @layer base {
@@ -21,7 +21,7 @@
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-300 to-pink-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-rose-400;
   }
 }
 

@@ -116,7 +116,7 @@ export default function App() {
           <img 
             src="https://instagram.fcpq7-1.fna.fbcdn.net/v/t51.82787-15/640398016_18567407398003337_1066093886114620909_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=MzgzNjMwOTYzNjIxNTgwOTA2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwNjZ4MTA2Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=XewWUJOQYzkQ7kNvwGLwhzk&_nc_oc=AdmeAhI2mogp6WBxiPKeIhYei6OWXfJ6vMA8chpEpEDql-EEI3HP1SVNUIRKRv4mTGw&_nc_ad=z-m&_nc_cid=1138&_nc_zt=23&_nc_ht=instagram.fcpq7-1.fna&_nc_gid=Uk2wouNCaZO5pkYBE6xq-A&_nc_ss=8&oh=00_AfxD152OH79x423HkGdl651fCS11Rd5Ow0t2hMWVi5X-lA&oe=69B4CE1E" 
             alt="DJ Danny Albuquerque Hero"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-top"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#050505]"></div>
@@ -127,7 +127,7 @@ export default function App() {
             A Força Feminina na Música Urbana
           </h2>
           <h1 className="hero-title text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-display font-extrabold tracking-tighter leading-[0.9] mb-8 break-words">
-            DANNY <br className="hidden sm:block" /> ALBUQUERQUE
+            DANNY <br className="hidden sm:block" /> <span className="whitespace-nowrap">ALBUQUERQUE</span>
           </h1>
           <p className="hero-title text-base md:text-xl text-white/70 max-w-2xl mx-auto mb-10 font-light leading-relaxed px-4">
             DJ, Produtora, Cantora e Compositora. Transformando palcos com energia autêntica e produções que dominam o funk brasileiro.
@@ -196,18 +196,16 @@ export default function App() {
             </a>
           </div>
 
-          <div className="aspect-video w-full rounded-3xl overflow-hidden glass shadow-2xl shadow-purple-500/10">
-            <Player 
-              url="https://www.youtube.com/watch?v=oKo9L2oXoxo" 
+          <div className="aspect-video w-full rounded-3xl overflow-hidden glass shadow-2xl shadow-pink-500/10">
+            <iframe 
               width="100%" 
-              height="100%"
-              controls
-              config={{
-                youtube: {
-                  playerVars: { showinfo: 1 }
-                }
-              }}
-            />
+              height="100%" 
+              src="https://www.youtube.com/embed/GmeB1Gy6gMM" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -222,7 +220,7 @@ export default function App() {
 
           <div className="bento-grid">
             {/* Card 1 */}
-            <div className="col-span-1 md:col-span-2 glass p-8 rounded-3xl flex flex-col justify-end relative overflow-hidden group">
+            <div className="col-span-1 md:col-span-2 glass p-8 rounded-3xl flex flex-col items-center text-center md:items-start md:text-left md:justify-end relative overflow-hidden group">
               <div className="w-16 h-16 bg-brand-primary/20 rounded-2xl flex items-center justify-center mb-6 text-brand-primary group-hover:scale-110 transition-transform">
                 <Mic2 className="w-8 h-8" />
               </div>
@@ -367,7 +365,7 @@ export default function App() {
       {/* CTA Final */}
       <section id="contato" className="py-24 px-6 reveal">
         <div className="max-w-5xl mx-auto glass p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 -z-10"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-pink-500/10 to-rose-500/10 -z-10"></div>
           <h2 className="text-4xl md:text-7xl font-display font-bold tracking-tighter mb-8">LEVE A DANNY PARA O SEU EVENTO</h2>
           <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto">
             Garanta uma performance inesquecível com a DJ que é referência em música urbana e presença de palco.
@@ -375,7 +373,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-6">
             <a 
               href="https://wa.me/5531971073848"
-              className="bg-brand-primary text-black px-12 py-6 rounded-full font-black text-xl hover:bg-brand-secondary transition-all hover:scale-105 active:scale-95 shadow-xl shadow-purple-500/20"
+              className="bg-brand-primary text-black px-12 py-6 rounded-full font-black text-xl hover:bg-brand-secondary transition-all hover:scale-105 active:scale-95 shadow-xl shadow-pink-500/20"
             >
               FALAR COM A PRODUÇÃO
             </a>
