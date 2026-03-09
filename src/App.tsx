@@ -126,8 +126,9 @@ export default function App() {
           <h2 className="hero-title text-[10px] sm:text-xs md:text-base font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] text-brand-primary mb-4 break-words">
             A Força Feminina na Música Urbana
           </h2>
-          <h1 className="hero-title text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-display font-extrabold tracking-tighter leading-[0.9] mb-8 break-words">
-            DANNY <br className="hidden sm:block" /> <span className="whitespace-nowrap">ALBUQUERQUE</span>
+          <h1 className="hero-title font-display font-extrabold tracking-tighter leading-[0.8] mb-8 flex flex-col items-center">
+            <span className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl">DANNY</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl whitespace-nowrap uppercase">ALBUQUERQUE</span>
           </h1>
           <p className="hero-title text-base md:text-xl text-white/70 max-w-2xl mx-auto mb-10 font-light leading-relaxed px-4">
             DJ, Produtora, Cantora e Compositora. Transformando palcos com energia autêntica e produções que dominam o funk brasileiro.
